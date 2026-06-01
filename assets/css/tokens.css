@@ -1,0 +1,80 @@
+/* =====================================================================
+   PAULISTANA EXPRESS PIZZARIA — DESIGN TOKENS
+   Sampled from the brand logo. Single source of truth.
+   ===================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800&display=swap');
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* RED — molho · energia · apetite (PRIMARY) */
+  --red-50:#FEF2F1; --red-100:#FDDDDB; --red-200:#FABAB7; --red-300:#F58D89;
+  --red-400:#EE5450; --red-500:#E11B1A; --red-600:#C21311; --red-700:#9E0F0E;
+  --red-800:#7A0E0D; --red-900:#561110;
+
+  /* GOLD — queijo · calor · rapidez (SECONDARY) */
+  --gold-50:#FFF9E8; --gold-100:#FFEFC2; --gold-200:#FFE08A; --gold-300:#FFD24F;
+  --gold-400:#FFC72C; --gold-500:#FFC21A; --gold-600:#E59A00; --gold-700:#B8780A;
+  --gold-800:#8F5E0C; --gold-900:#6B470E;
+
+  /* GRAPHITE — neutral · premium */
+  --graphite-50:#F7F5F3; --graphite-100:#ECE9E5; --graphite-200:#D8D3CD;
+  --graphite-300:#B6AFA7; --graphite-400:#8C857D; --graphite-500:#635D57;
+  --graphite-600:#46413D; --graphite-700:#2E2A28; --graphite-800:#1E1B1F;
+  --graphite-900:#131115;
+
+  /* GREEN — success / WhatsApp register */
+  --green-50:#ECFBF2; --green-100:#CDF3DD; --green-300:#6FD89B;
+  --green-500:#16A34A; --green-700:#0E7A37; --whats:#25D366;
+
+  --cream:#F4E7D3; --cream-soft:#FBF3E7; --white:#FFFFFF; --black:#000000;
+
+  /* Semantic — light surfaces */
+  --bg:var(--white); --bg-subtle:var(--graphite-50);
+  --surface:var(--white); --surface-2:var(--graphite-50);
+  --border:var(--graphite-200); --border-strong:var(--graphite-300);
+  --fg:var(--graphite-900); --fg-2:var(--graphite-500); --fg-3:var(--graphite-400);
+  --primary:var(--red-500); --primary-hover:var(--red-600); --primary-press:var(--red-700);
+  --secondary:var(--gold-500); --accent:var(--gold-400); --success:var(--green-500);
+  --focus-ring:color-mix(in srgb, var(--red-500) 45%, transparent);
+
+  /* Dark surfaces */
+  --dark-bg:var(--graphite-900); --dark-surface:var(--graphite-800);
+  --dark-border:color-mix(in srgb, var(--white) 10%, transparent);
+  --dark-fg:var(--cream-soft); --dark-fg-2:var(--graphite-300);
+
+  /* Type */
+  --font-script:'Lobster', cursive;
+  --font-display:'Montserrat', system-ui, sans-serif;
+  --font-body:'Montserrat', system-ui, sans-serif;
+  --w-regular:400; --w-medium:500; --w-semibold:600; --w-bold:700; --w-extrabold:800; --w-black:900;
+
+  /* Spacing (4px base) */
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:20px;
+  --space-6:24px; --space-8:32px; --space-10:40px; --space-12:48px; --space-16:64px;
+  --space-20:80px; --space-24:96px;
+
+  /* Radius */
+  --radius-xs:6px; --radius-sm:10px; --radius-md:16px; --radius-lg:22px;
+  --radius-xl:32px; --radius-pill:999px;
+
+  /* Elevation */
+  --shadow-sm:0 1px 2px rgba(19,17,21,.08), 0 1px 3px rgba(19,17,21,.06);
+  --shadow-md:0 4px 12px rgba(19,17,21,.10), 0 2px 4px rgba(19,17,21,.06);
+  --shadow-lg:0 12px 28px rgba(19,17,21,.16), 0 4px 8px rgba(19,17,21,.08);
+  --shadow-xl:0 24px 60px rgba(19,17,21,.22);
+  --shadow-red:0 10px 30px rgba(225,27,26,.35);
+  --shadow-gold:0 10px 30px rgba(255,194,26,.40);
+
+  /* Motion */
+  --ease-out:cubic-bezier(.2,.7,.3,1);
+  --ease-in-out:cubic-bezier(.6,0,.2,1);
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --dur-fast:120ms; --dur-base:220ms; --dur-slow:380ms;
+}

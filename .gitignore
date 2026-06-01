@@ -1,0 +1,9 @@
+# OS / editores
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Artefatos de trabalho (não fazem parte do site publicado)
+screenshots/
